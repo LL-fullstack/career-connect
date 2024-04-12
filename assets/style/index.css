@@ -1,1 +1,157 @@
 @charset 'utf-8'; 
+
+body {
+    font-family: 'Nunito-sans', 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding: 25px 30px;
+}
+
+aside {
+    flex: 40%;
+}
+
+.right-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    flex: 30%;
+    max-height: 30%;
+    margin-right: 150px;
+}
+
+/* ...................................................... */
+/* Login                                                  */
+/* ...................................................... */
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 32px;
+    color: #0077b5;
+}
+
+.login-btn {
+    display: flex;
+    margin-bottom: 50px;
+}
+
+#input-email, #input-password {
+    border: none;
+    background-color: #ededed;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="email"], input[type="password"] {
+    margin-bottom: 20px;
+}
+
+input::placeholder {
+    color: #0077b5;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.input-text {
+    display: flex;
+    flex-direction: column;
+}
+
+#loginButton, #signButton {
+    padding: 10px 40px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+#loginButton:hover, #signButton:hover {
+    background-color: #00b53e;
+    border: none;
+}
+
+#loginButton {
+    background-color: #0077b5;
+    color: #fff;
+    margin-right: 30px;
+}
+
+#signButton {
+    background-color: #fff;
+    color: #0077b5;
+    border: solid #0077b5;
+    border-width: 1.5px;
+}
+
+.remember-forgot {
+    display: flex;
+    margin-bottom: 30px;
+    justify-content: space-between;
+}
+
+label {
+    margin-left: -200px;
+    color: #0077b5;
+}
+
+.remember-forgot a {
+    color: #0077b5;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+/* ...................................................... */
+/* Footer                                                 */
+/* ...................................................... */
+
+.social-icons {
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.social-icons i:hover {
+    text-decoration: underline;
+}
+
+.social-icons a {
+    margin-right: 10px;
+}
+
+.social-icons i {
+    color: #0077b5;
+}
+
+.list {
+    display: flex;
+    justify-content: space-between; 
+    margin-bottom: 10px;  
+}
+
+.list li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.list li a:hover {
+    text-decoration: underline;
+}
+
+.list li a {
+    text-decoration: none;
+    color: #0077b5;
+    font-size: 14px;
+    transition: transform 0.3s ease;
+}
+
+.copyright {
+    color: #0077b5;
+    font-size: 14px;
+}
