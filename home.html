@@ -13,10 +13,11 @@
        <link rel="preconnect" href="https://fonts.googleapis.com">
        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
        <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
-       <script src="./assets/script/home.js" defer></script>
+       <script type="module" src="./assets/script/home.js" defer></script>
+       <script type="module" src="./assets/script/utility.js" defer></script>
    </head>
    <body>
-    <div class="container">
+
         <div class="header-section">
             <header>
                 <h1>CareerConnect</h1>
@@ -29,28 +30,81 @@
                         <li> <a href="#"><i class="fa-solid fa-bell"></i>Notifications</a></li>
                         <li> <a href="#"><i class="fa-solid fa-suitcase"></i>Jobs</a></li>
                         <li> <a href="#"><i class="fa-solid fa-network-wired"></i>Work</a></li>
-                        <li><img src="./assets/media/user.png" alt="Sample img" id="loginPic"></li>
+                        <li><img src="./assets/media/user.png" alt="Sample img" id="userPic"></li>
                     </ul>
                 </nav>
             </header>
         </div>
-       
-    </div>
-    <p>Home</p>
-    <p>Network</p>
-    <p>Messaging</p>
-    <p>Notifications</p>
-    <p>Jobs</p>
-    <p>Work</p>
-    <p>People You May Know</p>
-    <p>Article</p>
-    <p>Image</p>
-    <p>Video</p>
-    <p>Free access to exclusive insights</p>
-    <p>Upgrade to Premium</p>
-    <p>767</p>
-    <p>Connections</p>
-    <p>60</p>
-    <p>Views</p>
+
+        <main>
+            <div class="content-section">
+
+                <div class="profile-section">
+                    <section class="profile-img">
+                        <img src="./assets/media/user.png" alt="Sample img" id="loginPic">
+                        <h2>Lily Rose</h2>
+                        <p>Full Stack Developer</p>
+                        <a href="https://www.linkedin.com/"><i class="fa-solid fa-link"></i>https://www.linkedin.com</a>
+                    </section>
+                    <section class="detail">
+                        <p class="left"><span>767</span><br>Connections</p>
+                        <p><span>60</span><br>Views</p>
+                    </section>
+                    <section class="upgrade">
+                        <p>Free access exclusive tools & insights</p>
+                        <button class="upgrade-btn">UPGRADE TO PREMIUM</button>
+                    </section>
+                 </div>
+
+                 <div class="post-part">
+                     <section class="post-form">
+                        <form id="postForm" class="post-section">
+                            <div id="postContent" class="post-content">
+                            <textarea id="postText" placeholder="What's new today?"></textarea>
+                            <div id="bottomRow">
+                                <label for="imageInput" class="file-input-label">
+                                    <img src="./assets/media/img-icon.jpg" alt="img-icon" id="img-icon">
+                                    <input type="file" id="imageInput" class="select-pic" accept="image/*">
+                                    <span id="fileLabel"></span>
+                                </label>
+                                <button type="click" id="postButton">Post</button>
+                            </div>  
+                        </div>
+                    </form>
+                    </section>
+                    <section id="postsSection"></section>
+
+                </div>
+
+                <div class="aside-section">
+                    <section class="aside-bar">
+                        <aside class="aside-title">
+                            <h2>People you may know</h2>
+                        </aside>
+                        <div id="random-user">
+
+                        </div>
+                    </section>
+                </div>
+        </main>
+
+        <footer>
+            <div class="social-icons">
+                <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://twitter.com/?lang=en" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                <a href="mailto:careerconnect@gmail.com"><i class="fa-regular fa-envelope"></i></a>
+            </div>
+            <ul class="list">
+                <li><a href="#">Copyright Policy</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">User Agreement</a></li>
+                <li><a href="#">Send Feedback</a></li>
+            </ul>
+            <p class="copyright">
+                CareerConnect @2024
+            </p>
+        </footer>  
+
    </body>
 </html> 
