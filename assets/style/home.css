@@ -102,10 +102,11 @@ ul li a i {
     align-items: center;
     text-align: center;
     background-color: #fff;
-    padding: 20px 0;
+    padding: 20px 0px;
     position: relative;
     border-radius: 5px;
     height: fit-content;
+    margin-top: 20px;
 }
 
 .profile-img {
@@ -395,11 +396,9 @@ p span {
 
 .aside-section {
     flex: 0 0 220px;
-
     padding: 20px 0;
     position: relative;
     background-color:  #f2f3f4;
-    border-radius: 5px;
 }
 
 .aside-bar {
@@ -410,10 +409,12 @@ p span {
     background-color: #f2f3f4;
 }
 
+
 .aside-title {
     margin-bottom: 10px;
     background-color: #fff;
     padding: 10px;
+    border-radius: 5px;
 }
 
 aside h2 {
@@ -426,7 +427,7 @@ aside h2 {
 /* ........................................................... */
 
 footer {
-    position: fixed;
+    position: relative;
     bottom: 0;
     width: 100%;
     background-color: #fff;
@@ -517,6 +518,7 @@ footer i {
     margin-bottom: 5px;
     padding: 10px;
     background-color: #fff;
+    border-radius: 5px;
 }
 
 .card-details-div {

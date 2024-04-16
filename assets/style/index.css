@@ -15,6 +15,7 @@ body {
 
 aside {
     flex: 40%;
+    margin-left: 20px;
 }
 
 .right-section {
@@ -24,7 +25,7 @@ aside {
     gap: 20px;
     flex: 30%;
     max-height: 30%;
-    margin-right: 150px;
+    margin-right: 100px;
 }
 
 /* ...................................................... */
